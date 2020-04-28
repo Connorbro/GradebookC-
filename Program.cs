@@ -9,7 +9,9 @@ namespace GradeBook
         {
             var numbers = new [] {12.7, 10.3, 6.11, 4.1};
             
-            List <double> grades;
+            var grades = new List<double>();
+            grades.Add(56.1);
+            
             
 
             var result = 0.0;
