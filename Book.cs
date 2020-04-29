@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 
 namespace GradeBook
@@ -14,7 +15,14 @@ namespace GradeBook
             grades.Add(grade);
 
         }
+        public void ShowStatistics()
+        {
+            
+        }
         private List<double> grades;
+
+        
+
         private string name;
     }
 }
