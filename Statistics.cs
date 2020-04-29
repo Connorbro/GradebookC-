@@ -4,6 +4,6 @@ namespace GradeBook
     {
         public double Average;
         public double High;
-        public double 
+        public double Low;
     }
 }
