@@ -9,10 +9,6 @@ namespace GradeBook
     {
         static void Main(string[] args)
         { 
-
-            var p = new Program();
-            Program.Main(args);
-
             var book = new Book("Connor's Grade Book");
             book.AddGrade(89.1);
             book.AddGrade(90.5);
@@ -28,8 +24,8 @@ namespace GradeBook
             var lowGrade = double.MaxValue;
             foreach(var number in grades)
             {
-                highGrade = Math.Max(number, highGrade);
-                lowGrade = Math.Min(number, lowGrade);
+                 highGrade = Math.Max(number, highGrade);
+                 lowGrade = Math.Min(number, lowGrade);
                 result += number;
             }
             result /= grades.Count;
