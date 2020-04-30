@@ -18,7 +18,7 @@ namespace GradeBook
             }
             else 
             {
-                Console.WriteLine("Invalid value")
+                Console.WriteLine("Invalid value");
             }
             
 
@@ -30,11 +30,9 @@ namespace GradeBook
             result.Average = 0.0;
             result.High = double.MinValue;
             result.Low = double.MaxValue;
-            foreach(var grade in grades)
+            for(var index = 0; index < grades.Count; index += 1)
             {
-                 result.High = Math.Max(grade, result.High);
-                 result.Low = Math.Min(grade, result.Low);
-                 result.Average += grade;
+                 result.Low = Math.Min(grades[index], result.Low);
             }
             result.Average /= grades.Count;
 
