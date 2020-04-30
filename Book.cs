@@ -16,6 +16,10 @@ namespace GradeBook
             {
                 grades.Add(grade);
             }
+            else 
+            {
+                Console.WriteLine("Invalid value")
+            }
             
 
         }
