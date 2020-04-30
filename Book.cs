@@ -81,8 +81,22 @@ namespace GradeBook
                 result.Letter = 'C';
                 break;
 
-                case var d when d >= 90.0:
-                result.Letter = 'A';
+                case var d when d >= 60.0:
+                result.Letter = 'D';
+                break;
+
+                case var d when d >= 50.0:
+                result.Letter = 'E';
+                break;
+
+                case var d when d >= 40.0:
+                result.Letter = 'F';
+                break;
+                case var d when d >= 30.0:
+                result.Letter = 'G';
+                break;
+                case var d when d >= 20.0:
+                result.Letter = 'U';
                 break;
             }
 
