@@ -92,9 +92,11 @@ namespace GradeBook
                 case var d when d >= 40.0:
                 result.Letter = 'F';
                 break;
+
                 case var d when d >= 30.0:
                 result.Letter = 'G';
                 break;
+                
                 case var d when d >= 20.0:
                 result.Letter = 'U';
                 break;

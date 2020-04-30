@@ -10,9 +10,15 @@ namespace GradeBook
         static void Main(string[] args)
         { 
             var book = new Book("Connor's Grade Book");
-            book.AddGrade(89.1);
-            book.AddGrade(90.5);
-            book.AddGrade(77.5);
+            
+            var done = false; 
+
+            while(!done)
+            {
+                Console.WriteLine("Enter a grade or 'q' to quit");
+                var input = Console.ReadLine();
+            }
+
 
             var stats = book.GetStatistics();
 
