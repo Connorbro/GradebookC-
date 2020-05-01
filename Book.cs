@@ -41,7 +41,7 @@ namespace GradeBook
             }
             else 
             {
-                Console.WriteLine("Invalid value");
+                throw new ArgumentException($"Invalid grade");
             }
             
 
@@ -96,7 +96,7 @@ namespace GradeBook
                 case var d when d >= 30.0:
                 result.Letter = 'G';
                 break;
-                
+
                 case var d when d >= 20.0:
                 result.Letter = 'U';
                 break;
