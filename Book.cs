@@ -114,7 +114,7 @@ namespace GradeBook
         }
         set
         {
-            
+            name = value;
         }
     }
         private string name;
