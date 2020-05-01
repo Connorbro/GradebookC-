@@ -3,6 +3,8 @@ using System.Collections.Generic;
 
 namespace GradeBook
 {
+    public delegate void GradeAddedDelegate();
+    
     public class Book
     {
         public Book(string name)
@@ -110,7 +112,7 @@ namespace GradeBook
         public string Name
         {
             get; 
-            private set;
+            set;
         }
         public const string CATEGORY = "Science";
     }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 namespace GradeBook
 {
+    
 
   
     class Program
@@ -25,7 +26,7 @@ namespace GradeBook
                 {
                 var grade = double.Parse(input);
                 book.AddGrade(grade);
-                book.AddGrade('A');
+                
                 }
                 catch(ArgumentException ex)
                 {
