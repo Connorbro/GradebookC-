@@ -110,9 +110,13 @@ namespace GradeBook
     {
         get
         {
+            return name;
+        }
+        set
+        {
             
         }
     }
-        private string Name;
+        private string name;
     }
 }
