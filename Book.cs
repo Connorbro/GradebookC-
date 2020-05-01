@@ -106,7 +106,13 @@ namespace GradeBook
         }
         private List<double> grades;
 
-
+    public string Name
+    {
+        get
+        {
+            
+        }
+    }
         private string Name;
     }
 }
