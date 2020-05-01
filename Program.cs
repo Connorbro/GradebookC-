@@ -16,6 +16,7 @@ namespace GradeBook
             book.GradeAdded -= OnGradeAdded;
             book.GradeAdded += OnGradeAdded;
             
+            
              
 
             while(true)
