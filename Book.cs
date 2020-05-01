@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace GradeBook
 {
-    public delegate void GradeAddedDelegate();
+    public delegate void GradeAddedDelegate(object sender);
     
     public class Book
     {
