@@ -106,20 +106,9 @@ namespace GradeBook
         }
         private List<double> grades;
 
-    public string Name
-    {
-        get
+        public string Name
         {
-            return name;
+            get; set;
         }
-        set
-        {
-            if(!string.IsNullOrEmpty(value))
-            {
-                name = value;
-            }            
-        }
-    }
-        private string name;
     }
 }
