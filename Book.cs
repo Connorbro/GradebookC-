@@ -111,5 +111,6 @@ namespace GradeBook
             get; 
             private set;
         }
+        readonly string category;
     }
 }
