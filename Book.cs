@@ -105,6 +105,8 @@ namespace GradeBook
             return result;
         }
         private List<double> grades;
-        public string Name;
+
+
+        private string Name;
     }
 }
