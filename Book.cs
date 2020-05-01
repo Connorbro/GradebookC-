@@ -41,7 +41,7 @@ namespace GradeBook
             }
             else 
             {
-                throw new ArgumentException($"Invalid grade");
+                throw new ArgumentException($"Invalid {nameof(grade)}");
             }
             
 
