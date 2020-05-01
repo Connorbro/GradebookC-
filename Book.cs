@@ -114,7 +114,10 @@ namespace GradeBook
         }
         set
         {
-            name = value;
+            if(!string.IsNullOrEmpty(value))
+            {
+                name = value;
+            }            
         }
     }
         private string name;
