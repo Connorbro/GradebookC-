@@ -20,7 +20,8 @@ namespace GradeBook
     }
     public abstract class BookBase
     {
-        
+        public abstract void AddGrade(double grade);
+      
     }
     public class Book : NamedObject
     {
