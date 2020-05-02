@@ -18,6 +18,10 @@ namespace GradeBook
             set;
         }
     }
+    public abstract class BookBase
+    {
+        
+    }
     public class Book : NamedObject
     {
         public Book(string name) : base(name)

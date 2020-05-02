@@ -28,6 +28,7 @@ namespace GradeBook
 
         private static void EnterGrades(Book book)
         {
+            
             while (true)
             {
                 Console.WriteLine("Enter a grade or 'q' to quit");
