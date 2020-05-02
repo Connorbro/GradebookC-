@@ -11,6 +11,7 @@ namespace GradeBook
         static void Main(string[] args)
         { 
             var book = new Book("Connor's Grade Book");
+            
             book.GradeAdded += OnGradeAdded;
 
             while(true)
