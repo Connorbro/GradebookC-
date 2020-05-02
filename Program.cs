@@ -13,7 +13,7 @@ namespace GradeBook
             var book = new Book("Connor's Grade Book");
 
             book.GradeAdded += OnGradeAdded;
-            NewMethod(book);
+            EnterGrades(book);
 
             var stats = book.GetStatistics();
 
@@ -26,7 +26,7 @@ namespace GradeBook
             Console.WriteLine($"The letter grade is {stats.Letter}");
         }
 
-        private static void NewMethod(Book book)
+        private static void EnterGrades(Book book)
         {
             while (true)
             {
