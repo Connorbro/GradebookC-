@@ -27,9 +27,9 @@ namespace GradeBook
         public abstract void AddGrade(double grade);
       
     }
-    public class Book : BookBase
+    public class InMemoryBook : BookBase
     {
-        public Book(string name) : base(name)
+        public InMemoryBook(string name) : base(name)
         {
             
             grades = new List<double>();
