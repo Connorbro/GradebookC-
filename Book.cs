@@ -18,6 +18,10 @@ namespace GradeBook
             set;
         }
     }
+    public interface IBook
+    {
+        
+    }
     public abstract class Book : NamedObject
     {
         public Book(string name) : base(name)
