@@ -20,7 +20,9 @@ namespace GradeBook
     }
     public interface IBook
     {
-        
+         void AddGrade(double grade);
+         
+
     }
     public abstract class Book : NamedObject
     {
