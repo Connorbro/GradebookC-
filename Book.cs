@@ -18,16 +18,16 @@ namespace GradeBook
             set;
         }
     }
-    public abstract class BookBase : NamedObject
+    public abstract class Book : NamedObject
     {
-        public BookBase(string name) : base(name)
+        public Book(string name) : base(name)
         {
         }
 
         public abstract void AddGrade(double grade);
       
     }
-    public class InMemoryBook : BookBase
+    public class InMemoryBook : Book
     {
         public InMemoryBook(string name) : base(name)
         {
