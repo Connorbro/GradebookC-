@@ -15,7 +15,9 @@ namespace GradeBook
         public double Low;
         public char Letter
         {
-            switch(result.Average)
+            get
+            {
+                switch(result.Average)
             {
                 case var d when d >= 90.0:
                 result.Letter = 'A';
@@ -48,6 +50,7 @@ namespace GradeBook
                 case var d when d >= 20.0:
                 result.Letter = 'U';
                 break;
+            }
             }
         }
         public double Sum;
