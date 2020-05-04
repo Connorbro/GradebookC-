@@ -10,6 +10,7 @@ namespace GradeBook
         public int Count;
         public Statistics()
         {
+            Count =0;
             Average = 0.0;
             Sum = 0.0;
             High = double.MinValue;
