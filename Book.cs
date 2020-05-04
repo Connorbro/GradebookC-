@@ -33,11 +33,11 @@ namespace GradeBook
         {
         }
 
-        public event GradeAddedDelegate GradeAdded;
+        public virtual event GradeAddedDelegate GradeAdded;
 
         public abstract void AddGrade(double grade);
 
-        public Statistics GetStatistics()
+        public virtual Statistics GetStatistics()
         {
             throw new NotImplementedException();
         }
@@ -88,8 +88,8 @@ namespace GradeBook
                 throw new ArgumentException($"Invalid {nameof(grade)}");
             }
         }
-        public event GradeAddedDelegate GradeAdded;
-        public Statistics GetStatistics()
+        public override event GradeAddedDelegate GradeAdded;
+        public override Statistics GetStatistics()
         {
 
             var result = new Statistics();
