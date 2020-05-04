@@ -123,7 +123,7 @@ namespace GradeBook
                 {
                     continue;
                 }
-
+                 result.Add(grades[index]);
                  result.Low = Math.Min(grades[index], result.Low);
                  result.High = Math.Max(grades[index], result.High);
                  result.Average += grades[index];
