@@ -20,36 +20,36 @@ namespace GradeBook
                 switch(Average)
             {
                 case var d when d >= 90.0:
-                result.Letter = 'A';
+                return 'A';
                 break;
 
                 case var d when d >= 80.0:
-                result.Letter = 'B';
+                return  'B';
                 break;
 
                 case var d when d >= 70.0:
-                result.Letter = 'C';
+                return  'C';
                 break;
 
                 case var d when d >= 60.0:
-                result.Letter = 'D';
+                return  'D';
                 break;
 
                 case var d when d >= 50.0:
-                result.Letter = 'E';
+                return 'E';
                 break;
 
                 case var d when d >= 40.0:
-                result.Letter = 'F';
-                break;
+                return  'F';
+                
 
                 case var d when d >= 30.0:
-                result.Letter = 'G';
-                break;
+                return  'G';
+                
 
                 case var d when d >= 20.0:
-                result.Letter = 'U';
-                break;
+                return  'U';
+                
             }
             }
         }
