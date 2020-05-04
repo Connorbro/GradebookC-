@@ -44,9 +44,16 @@ namespace GradeBook
         {
         }
 
+        public override event GradeAddedDelegate GradeAdded;
+
         public override void AddGrade(double grade)
         {
             
+        }
+
+        public override Statistics GetStatistics()
+        {
+            throw new NotImplementedException();
         }
     }
     public class InMemoryBook : Book
