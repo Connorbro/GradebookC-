@@ -17,7 +17,7 @@ namespace GradeBook
         {
             get
             {
-                switch(result.Average)
+                switch(Average)
             {
                 case var d when d >= 90.0:
                 result.Letter = 'A';
