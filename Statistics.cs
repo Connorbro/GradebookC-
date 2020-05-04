@@ -42,7 +42,7 @@ namespace GradeBook
                 return  'G';
                 
 
-                case var d when d >= 20.0:
+                default:
                 return  'U';
                 
             }

@@ -61,7 +61,14 @@ namespace GradeBook
 
         public override Statistics GetStatistics()
         {
-            throw new NotImplementedException();
+            var result = new Statistics();
+
+            using(var reader = File.OpenText($"{Name}.txt"))
+            {
+                reader.ReadLine();
+            }
+            return result;
+
         }
     }
     public class InMemoryBook : Book
