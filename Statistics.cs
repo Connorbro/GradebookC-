@@ -7,9 +7,11 @@ namespace GradeBook
         public double Low;
         public char Letter;
         public double Sum;
+        public int Count;
         public Statistics()
         {
             Average = 0.0;
+            Sum = 0.0;
             High = double.MinValue;
             Low = double.MaxValue;
         }
