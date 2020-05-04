@@ -115,9 +115,7 @@ namespace GradeBook
         {
 
             var result = new Statistics();
-            result.Average = 0.0;
-            result.High = double.MinValue;
-            result.Low = double.MaxValue;
+            
 
             for(var index = 0; index < grades.Count; index += 1)
             {
