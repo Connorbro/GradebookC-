@@ -8,9 +8,9 @@ namespace GradeBook
         public char Letter;
         public Statistics()
         {
-            result.Average = 0.0;
-            result.High = double.MinValue;
-            result.Low = double.MaxValue;
+            Average = 0.0;
+            High = double.MinValue;
+            Low = double.MaxValue;
         }
     }
 }
