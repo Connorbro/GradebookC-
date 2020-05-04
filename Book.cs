@@ -33,13 +33,20 @@ namespace GradeBook
         {
         }
 
-        public virtual event GradeAddedDelegate GradeAdded;
-
+        public abstract event GradeAddedDelegate GradeAdded;
         public abstract void AddGrade(double grade);
+        public abstract Statistics GetStatistics();
+    }
 
-        public virtual Statistics GetStatistics()
+    public class DiskBook : Book
+    {
+        public DiskBook(string name) : base(name)
         {
-            throw new NotImplementedException();
+        }
+
+        public override void AddGrade(double grade)
+        {
+            
         }
     }
     public class InMemoryBook : Book
