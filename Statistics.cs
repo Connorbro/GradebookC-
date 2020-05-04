@@ -19,6 +19,8 @@ namespace GradeBook
         {
             Sum += number;
             Count += 1;
+            result.Low = Math.Min(grades[index], result.Low);
+            result.High = Math.Max(grades[index], result.High);
         }
         public Statistics()
         {
