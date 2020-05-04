@@ -36,7 +36,7 @@ namespace GradeBook
         public abstract void AddGrade(double grade);
       
     }
-    public class InMemoryBook : Book
+    public class InMemoryBook : Book, IBook
     {
         public InMemoryBook(string name) : base(name)
         {
