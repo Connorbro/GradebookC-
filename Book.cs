@@ -65,7 +65,11 @@ namespace GradeBook
 
             using(var reader = File.OpenText($"{Name}.txt"))
             {
-                reader.ReadLine();
+                var line = reader.ReadLine();
+                while(line != null)
+                {
+                    
+                }
             }
             return result;
 
