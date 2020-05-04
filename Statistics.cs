@@ -6,6 +6,7 @@ namespace GradeBook
         public double High;
         public double Low;
         public char Letter;
+        public double Sum;
         public Statistics()
         {
             Average = 0.0;
