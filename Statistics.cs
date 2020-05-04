@@ -8,6 +8,12 @@ namespace GradeBook
         public char Letter;
         public double Sum;
         public int Count;
+
+        public void Add(double number)
+        {
+            Sum += number;
+            Count += 1;
+        }
         public Statistics()
         {
             Count =0;
