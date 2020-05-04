@@ -68,7 +68,9 @@ namespace GradeBook
                 var line = reader.ReadLine();
                 while(line != null)
                 {
-                    
+                    var number = double.Parse(line);
+                    result.Add(number);
+                    line = reader.ReadLine();
                 }
             }
             return result;
